@@ -5,14 +5,14 @@ if (isset($_SESSION['admin']['role']) && $_SESSION['admin']['role'] === 'super_a
      $connectionOptions = array(
         "Database" => "DormDB",
         "Uid" => "dormdb_user",  //其实是超管
-        "PWD" => "StrongPassword123!",
+        "PWD" => "P88888888",
         "CharacterSet" => "UTF-8"
     );
 } else {
    $connectionOptions = array(
         "Database" => "DormDB",
         "Uid" => "dormdb_admin",  //这个才是普管
-        "PWD" => "Asdfgt8624953751",
+        "PWD" => "AAA666666",
         "CharacterSet" => "UTF-8"
     );
 }
