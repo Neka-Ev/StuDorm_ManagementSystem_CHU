@@ -143,7 +143,16 @@ if ($conn === false) {
 ---
 
 ## Author
-> **Name**: **[Neka_Ev](https://github.com/Neka-Ev)**
+<div style="display: flex; justify-content: center; align-items: center; height: 120px;">
+  <img src = "https://avatars.githubusercontent.com/u/185333492?v=4" style = "border-radius:50px; min-height:100px; min-width:100px">
+</div>
+
+<div style="display: flex; justify-content: center; align-items: center; height: 50px;">
+  <p href = "https://github.com/Neka-Ev" style = "color:#59636E" > Neka_Ev </p>
+</div>
+
 > **University**: ***[Chang'an University](https://www.chd.edu.cn/)***
+
 > **E-mail**: **wenyi4546@gmail.com**
-> **GitHub**: **[StuDorm_ManagementSystem_CHU](https://github.com/Neka-Ev/StuDorm_ManagementSystem_CHU)**
+
+> **Project**: **[StuDorm_ManagementSystem_CHU](https://github.com/Neka-Ev/StuDorm_ManagementSystem_CHU)**
