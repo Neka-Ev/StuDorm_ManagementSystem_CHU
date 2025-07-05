@@ -143,7 +143,7 @@ if ($conn === false) {
 ---
 
 ## Author
-![Intro](./images_src/QQ20250705-173611.png)
+![Intro](./images_src/avatar.png)
 
 > **University**: ***[Chang'an University](https://www.chd.edu.cn/)***
 
