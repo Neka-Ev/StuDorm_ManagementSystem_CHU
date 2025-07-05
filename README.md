@@ -143,13 +143,7 @@ if ($conn === false) {
 ---
 
 ## Author
-<div style="display: flex; justify-content: center; align-items: center; height: 120px;">
-  <img src = "https://avatars.githubusercontent.com/u/185333492?v=4" style = "border-radius:50px; min-height:100px; min-width:100px">
-</div>
-
-<div style="display: flex; justify-content: center; align-items: center; height: 50px;">
-  <p href = "https://github.com/Neka-Ev" style = "color:#59636E" > Neka_Ev </p>
-</div>
+![Intro](./images_src/QQ20250705-173611.png)
 
 > **University**: ***[Chang'an University](https://www.chd.edu.cn/)***
 
