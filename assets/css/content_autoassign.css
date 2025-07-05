@@ -1,0 +1,324 @@
+/* 自动分配页面样式 */
+/* 假设外层容器为 .autoassign-content */
+.autoassign-content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 32px 16px 48px 16px;
+    background: #f4f7fb;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* 表格容器样式 */
+.binding-status {
+    width: 100%;
+    max-width: 1300px;
+    min-width: 320px;
+    margin: 0 auto 32px auto;
+    background: #fff;
+    border: 1px solid #e3e8ee;
+    padding: 24px 28px 18px 28px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(67,97,238,0.06);
+    transition: box-shadow 0.2s;
+}
+.binding-status h2 {
+    margin-bottom: 18px;
+    color: #3a0ca3;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.binding-status .table {
+    width: 100%;
+    min-width: 400px;
+    border-collapse: collapse;
+    background: #fff;
+}
+.binding-status .table th,
+.binding-status .table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #e3e8ee;
+    text-align: left;
+    font-size: 15px;
+}
+.binding-status .table th {
+    background: #f6f8fa;
+    font-weight: 600;
+    color: #22223b;
+}
+.binding-status .table tr:last-child td {
+    border-bottom: none;
+}
+
+.auto-assign-container, .binding-config {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(67,97,238,0.06);
+    padding: 32px 32px 24px 32px;
+    margin: 0 auto 32px auto;
+    max-width: 1100px;
+    min-width: 900px;
+}
+
+.auto-assign-container h2, .binding-config h2 {
+    color: #3a0ca3;
+    margin-bottom: 24px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.auto-assign-form {
+    margin-bottom: 0;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #22223b;
+    letter-spacing: 0.5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 5px 15px;
+    margin-left: 0px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    border: 1px solid #dbeafe;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #f8fafc;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #4361ee;
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.13);
+}
+
+.building-selection {
+    display: flex;
+    gap: 36px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+}
+
+.gender-group {
+    flex: 1 1 220px;
+    min-width: 220px;
+    background: #f6f8fa;
+    padding: 18px 16px 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 0;
+    box-shadow: 0 1px 4px rgba(67,97,238,0.03);
+}
+.gender-group strong {
+    color: #4361ee;
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+    display: block;
+    border-bottom: 1px solid #e3e8ee;
+    padding-bottom: 7px;
+}
+
+.building-option {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.building-option input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #4361ee;
+}
+
+.building-option label {
+    cursor: pointer;
+    user-select: none;
+}
+
+.form-actions {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 10px 24px;
+    margin-left: 0px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    
+    background-color: #4361ee;
+    color: white;
+    box-shadow: 0 2px 8px rgba(67,97,238,0.08);
+}
+
+.btn-primary:hover {
+    background-color: #3a0ca3;
+    box-shadow: 0 4px 16px rgba(67,97,238,0.13);
+}
+
+.alert {
+    padding: 15px 18px;
+    border-radius: 5px;
+    margin-bottom: 22px;
+    font-size: 15px;
+}
+
+.alert-success {
+    background-color: #eafaf1;
+    color: #18794e;
+    border: 1px solid #b7e4c7;
+}
+
+.alert-danger {
+    background-color: #fff0f3;
+    color: #b02a37;
+    border: 1px solid #f5c6cb;
+}
+
+.alert-warning {
+    background-color: #fffbe6;
+    color: #b68900;
+    border: 1px solid #ffeeba;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #fff;
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e3e8ee;
+    font-size: 15px;
+}
+
+.table th {
+    background-color: #f6f8fa;
+    font-weight: 600;
+    color: #22223b;
+}
+
+.table tr:hover {
+    background-color: #f0f4ff;
+}
+
+/* 表格斑马纹效果：灰白交替 */
+.table tbody tr:nth-child(odd) {
+    background-color: #d1d4d8;
+}
+.table tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+.unassigned-students {
+    margin: 0 auto;
+    margin-top: 32px;
+    width: 100%;
+    max-width: 1300px; /* 原900px，改为更宽 */
+    min-width: 320px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(67,97,238,0.06);
+    padding: 28px 28px 18px 28px;
+}
+
+.unassigned-students-table-wrap {
+    max-height: 400px;
+    overflow-y: auto;
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid #e3e8ee;
+    background: #fff;
+}
+
+/* 表头固定 */
+.unassigned-students-table thead th {
+    position: sticky;
+    top: 0;
+    background: #f6f8fa;
+    z-index: 2;
+    box-shadow: 0 2px 4px rgba(67,97,238,0.03);
+}
+
+.unassigned-students h4 {
+    color: #3a0ca3;
+    margin-bottom: 18px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* 响应式优化 */
+@media (max-width: 900px) {
+    .autoassign-content,
+    .binding-status,
+    .auto-assign-container,
+    .binding-config,
+    .unassigned-students {
+        max-width: 100%;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .building-selection {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .gender-group {
+        min-width: 0;
+    }
+}
+@media (max-width: 600px) {
+    .autoassign-content {
+        padding: 12px 2px 24px 2px;
+    }
+    .binding-status,
+    .auto-assign-container,
+    .binding-config,
+    .unassigned-students {
+        padding: 12px 2px 12px 2px;
+        border-radius: 6px;
+    }
+    .table th, .table td {
+        padding: 8px 6px;
+        font-size: 13px;
+    }
+    .form-control {
+        font-size: 14px;
+        padding: 7px 8px;
+    }
+}
+

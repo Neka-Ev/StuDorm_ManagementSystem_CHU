@@ -1,0 +1,340 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(-45deg, #003366, #0055aa, #0077cc, #0099ff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+/* HEADER */
+header {
+    background-color: rgb(1, 138, 250);
+    color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo-img {
+    src: url("../images/logo_blue.png");
+    width: 200px;
+    height: auto;
+}
+
+.navigasi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+/* Gradient Background Animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    height: 600px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.left-section {
+    flex: 1;
+    background: linear-gradient(to bottom right, #003366, #0055aa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.left-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></svg>');
+    opacity: 0.2;
+}
+
+.left-section .logo {
+    text-align: center;
+    z-index: 1;
+    margin-bottom: 20px; /* 增加下边距让整体更美观 */
+}
+
+.left-section .logo .icon {
+    width: 80px;              /* 增大圆圈 */
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin: 0 auto 16px auto; /* 居中并与下方文字留间距 */
+}
+.left-section .logo .icon:hover {
+    width: 85px;              /* 增大圆圈 */
+    height: 85px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+
+}
+
+.left-section .logo .icon img {
+    width: 56px;              /* 图标略小于圆圈 */
+    height: 56px;
+    object-fit: contain;
+}
+
+.left-section .logo h1 {
+    margin-top: 10px;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.right-section {
+    flex: 1.5;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #003366;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 28px;
+}
+
+p {
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #003366;
+    font-size: 14px;
+    text-align: left;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+
+input:focus {
+    outline: none;
+    border-color: #003366;
+    box-shadow: 0 0 0 3px rgba(0, 80, 150, 0.2);
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper i {
+    position: absolute;
+    right: 15px;
+    top: 14px;
+    color: #777;
+    cursor: pointer;
+}
+
+.forgot {
+    text-align: right;
+    margin-bottom: 25px;
+}
+
+.forgot a {
+    color: #003366;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.forgot a:hover {
+    color: #0055aa;
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to right, #003366, #0055aa);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 80, 150, 0.3);
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #004080, #0066cc);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 80, 150, 0.4);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.form-container p {
+    margin-top: 25px;
+    font-size: 15px;
+    color: #555;
+}
+
+.form-container p a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.form-container p a:hover {
+    color: #0055aa;
+    text-decoration: underline;
+}
+
+.error-message {
+    background: #ffebee;
+    color: #c62828;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    border-left: 4px solid #c62828;
+    animation: shake 0.5s;
+}
+
+.form-control {
+    width: 100%;
+    padding: 5px 15px;
+    margin-left: 10px;
+    margin-right: 15px;
+    border: 1px solid #dbeafe;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #f8fafc;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #4361ee;
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.13);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {transform: translateX(0);}
+    20%, 60% {transform: translateX(-8px);}
+    40%, 80% {transform: translateX(8px);}
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+    
+    .left-section, .right-section {
+        width: 100%;
+        padding: 30px;
+    }
+    
+    .left-section {
+        padding: 60px 30px;
+    }
+}
